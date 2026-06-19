@@ -18,7 +18,7 @@ function PostList({ isPosting, onStopPosting }) {
         </Modal>
       )}
       <ul className={classes.posts}>      
-        <Post name="Max" content="React is great!" />
+        {<posts.map((post) => <Post author={post.author} body={post.body}/>)}
       </ul>
     </>
   )
